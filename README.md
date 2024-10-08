@@ -92,7 +92,7 @@ The `OAI_CONFIG_LIST.json` file contains the configuration for the Groq API. Ens
 
 ## License
 
-[Specify your license here]
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
 
