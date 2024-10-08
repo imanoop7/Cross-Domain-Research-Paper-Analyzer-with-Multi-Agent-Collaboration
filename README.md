@@ -48,22 +48,45 @@ This project implements a Research Paper Analyzer that leverages multi-agent col
    pip install -r requirements.txt
    ```
 
-3. Set up your Groq API key in the `OAI_CONFIG_LIST.json` file. Here's a sample configuration:
+3. Set up your API keys in the `OAI_CONFIG_LIST.json` file. Here are sample configurations for different providers:
 
    ```json
    [
      {
-       "name": "default",
+       "name": "groq",
        "api_key": "your_groq_api_key_here",
        "api_base": "https://api.groq.com/v1",
        "api_type": "groq",
        "model": "llama-3.1-8b-instant",
        "temperature": 0
+     },
+     {
+       "name": "openai",
+       "api_key": "your_openai_api_key_here",
+       "api_base": "https://api.openai.com/v1",
+       "api_type": "openai",
+       "model": "gpt-4-turbo-preview",
+       "temperature": 0
+     },
+     {
+       "name": "ollama",
+       "api_base": "http://localhost:11434",
+       "api_type": "ollama",
+       "model": "llama2",
+       "temperature": 0
+     },
+     {
+       "name": "gemini",
+       "api_key": "your_gemini_api_key_here",
+       "api_base": "https://generativelanguage.googleapis.com/v1beta",
+       "api_type": "gemini",
+       "model": "gemini-pro",
+       "temperature": 0
      }
    ]
    ```
 
-   Replace `"your_groq_api_key_here"` with your actual Groq API key.
+   Replace `"your_*_api_key_here"` with your actual API keys for each service. Note that Ollama typically runs locally and doesn't require an API key.
 
 4. Run the application:
    ```bash
