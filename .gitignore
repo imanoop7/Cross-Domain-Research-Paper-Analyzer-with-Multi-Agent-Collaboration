@@ -1,0 +1,3 @@
+.venv/*
+OAI_CONFIG_LIST.json
+*.db

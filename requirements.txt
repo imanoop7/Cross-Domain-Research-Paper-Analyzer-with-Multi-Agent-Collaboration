@@ -1,0 +1,4 @@
+autogen 
+PyPDF2 
+gradio
+groq
